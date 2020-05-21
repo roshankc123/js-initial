@@ -1,0 +1,49 @@
+* {
+  padding: 0.5rem;
+  margin: auto;
+}
+.clock img {
+  align-items: center;
+  width: 20%;
+  height: 20%;
+  /* align-content: center; */
+  position: relative;
+  margin-left: 40%;
+  margin-bottom: 20%;
+}
+
+.clock .hrs {
+  background: rgb(156, 23, 23);
+  height: 6%;
+  border-radius: 3px;
+  left: 50%;
+  position: absolute;
+  top: 18%;
+  transform-origin: 50% 100%;
+  stroke-width: 2em;
+}
+
+.clock .minutes {
+  background: rgb(110, 79, 21);
+  height: 8%;
+  position: absolute;
+  border-radius: 4px;
+  top: 16%;
+  left: 50%;
+  z-index: 1;
+  /* transform: rotate(45deg); */
+  transform-origin: 50% 100%;
+}
+
+.clock .seconds {
+  background: black;
+  height: 11%;
+  width: 1px;
+  top: 13%;
+  position: absolute;
+  left: 50%;
+  z-index: 2;
+  border-radius: 5px;
+  /* transform: rotate(70deg); */
+  transform-origin: 50% 100%;
+}
