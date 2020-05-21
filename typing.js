@@ -52,9 +52,9 @@ function start() {
 
 function final() {
   clearInterval(interval)
-  var sabda = start
-  var speedo = count
-  var actual = Math.floor(start / count)
+  var sabda = start()
+  var speedo = count()
+  var actual = Math.floor(sabda / speedo)
   finall.innerHTML = 'you can write in the speed of :' + actual
 }
 // reset everything
@@ -67,7 +67,7 @@ function TotalReset() {
 }
 // event will be listened
 
-typeareas.addEventListener('keypress', start, false)
+typeareas.addEventListener(onchange, start, false)
 submit.addEventListener(onclick, final, false)
 resetbtn.addEventListener(onclick, TotalReset, false)
 
